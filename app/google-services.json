@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964490233326",
+    "project_id": "basesfeelyou",
+    "storage_bucket": "basesfeelyou.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964490233326:android:187b2fcb9d24b6c9ad3aff",
+        "android_client_info": {
+          "package_name": "com.example.feelyou"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOGX1zU9NK20rxGp0kMDF-Rq5qj2Z4CB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
