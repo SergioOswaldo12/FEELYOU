@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class recuperarContrasena extends AppCompatActivity {
 
     EditText oetteEmail;
-    Button obtnAtras, obtnEnviar;
+    Button obtnAtrasR, obtnEnviar;
     FirebaseAuth mAuth;
 
     @Override
@@ -27,9 +27,9 @@ public class recuperarContrasena extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_recuperar_contrasena);
 
-        obtnAtras = findViewById(R.id.btnAtras);
+        obtnAtrasR = findViewById(R.id.btnAtrasR);
 
-        obtnAtras.setOnClickListener(new View.OnClickListener() {
+        obtnAtrasR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(recuperarContrasena.this, MainActivity.class);
@@ -54,6 +54,9 @@ public class recuperarContrasena extends AppCompatActivity {
                             .addOnCompleteListener(task -> {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(recuperarContrasena.this, "Correo de recuperación enviado", Toast.LENGTH_LONG).show();
+                                    Intent intent = new Intent(recuperarContrasena.this, MainActivity.class);
+                                    startActivity(intent);
+                                    finish();
                                 } else {
                                     Toast.makeText(recuperarContrasena.this, "Error al enviar el correo. Verifica que el correo esté registrado.", Toast.LENGTH_SHORT).show();
                                 }

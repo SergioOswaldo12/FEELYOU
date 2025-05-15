@@ -67,4 +67,26 @@
         app:layout_constraintVertical_bias="0.222"
         app:srcCompat="@drawable/usuario" />
 
+    <Button
+        android:id="@+id/btnAtrasR"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#5888A6"
+        android:rotation="-92"
+        android:shadowColor="#4E6879"
+        android:textColor="#4E6879"
+        android:textColorHighlight="#4E6879"
+        android:textColorHint="#4E6879"
+        android:textColorLink="#4E6879"
+        app:icon="@android:drawable/arrow_up_float"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:rippleColor="#5888A6"
+        app:strokeColor="#5888A6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
