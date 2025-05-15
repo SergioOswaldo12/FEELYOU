@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,8 +13,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/alata"
         android:text="Recuperar Contraseña"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -25,9 +27,10 @@
         android:layout_width="329dp"
         android:layout_height="56dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="416dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
+        android:fontFamily="sans-serif-medium"
         android:hint="Ingrese Correo"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
@@ -38,51 +41,20 @@
 
     <Button
         android:id="@+id/btnEnviar"
-        android:layout_width="197dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="568dp"
+        android:layout_width="150dp"
+        android:layout_height="57dp"
         android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/alata"
         android:text="Enviar"
         android:textColor="#0B0B0B"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="ATRAS"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnAtras"
-        android:layout_width="61dp"
-        android:layout_height="62dp"
-        android:backgroundTint="#5888A6"
-        android:rotation="-92"
-        android:shadowColor="#4E6879"
-        android:textColor="#4E6879"
-        android:textColorHighlight="#4E6879"
-        android:textColorHint="#4E6879"
-        android:textColorLink="#4E6879"
-        app:icon="@android:drawable/arrow_up_float"
-        app:iconTint="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        app:rippleColor="#5888A6"
-        app:strokeColor="#5888A6" />
+        app:layout_constraintVertical_bias="0.902" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -90,10 +62,9 @@
         android:layout_height="155dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11"
-        app:srcCompat="@drawable/logo_feel_you_removebg_preview" />
+        app:layout_constraintVertical_bias="0.222"
+        app:srcCompat="@drawable/usuario" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/adlam_display</item>
+        <item>@font/alata</item>
         <item>@font/anek_gujarati_thin</item>
     </array>
 </resources>

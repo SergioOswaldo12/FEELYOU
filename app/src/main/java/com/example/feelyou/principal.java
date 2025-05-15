@@ -22,7 +22,7 @@ public class principal extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(principal.this, MainActivity.class);
             startActivity(intent);
-            finish(); // Cierra la pantalla de bienvenida
+            finish();
         }, 6000); // 3000 ms = 6 segundos
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
