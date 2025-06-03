@@ -1,5 +1,6 @@
 package com.example.feelyou;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -39,7 +40,7 @@ public class menu extends AppCompatActivity {
             }
         });
 
-        btnIrMusica = findViewById(R.id.btnirmusica);
+        btnIrMusica = findViewById(R.id.anim_canciones);
         btnIrMusica.setOnClickListener(view -> {
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
             if (user != null) {
