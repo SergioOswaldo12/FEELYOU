@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5888A6"
-    tools:context=".menu"
-    android:name=".menu">
+    android:background="#5888A6">
 
-    <!-- Logo superior + texto CALMAMIND -->
+    <!-- Imagen principal -->
+
+    <ImageView
+        android:id="@+id/icono_menu"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_menu"
+        tools:layout_editor_absoluteX="363dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
     <LinearLayout
         android:id="@+id/header"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_width="339dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/logo"
@@ -31,14 +47,13 @@
             android:id="@+id/app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="CALMAMIND"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginStart="8dp" />
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Imagen principal -->
     <ImageView
         android:id="@+id/main_image"
         android:layout_width="0dp"
@@ -50,10 +65,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp"/>
 
-    <!-- Cuadro de botones con animaciones -->
 
-    <!-- Barra inferior (puedes personalizar los iconos) -->
-
+    <!-- Barra inferior -->
     <GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="0dp"
@@ -61,66 +74,10 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:columnCount="2"
-        android:rowCount="2"
+        android:rowCount="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_image">
-
-        <!-- Conversa -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            android:background="@drawable/boton_fondo"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/anim_conversa"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/conversa_anim" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="CONVERSA"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Meditación -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            android:background="@drawable/boton_fondo"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="12dp">
-
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/anim_meditacion"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/meditacion_anim" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="MEDITACIÓN"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-        </LinearLayout>
 
         <!-- Canciones -->
         <LinearLayout
@@ -176,19 +133,134 @@
                 android:text="EJERCICIOS"
                 android:textColor="#000000"
                 android:textStyle="bold" />
+
         </LinearLayout>
+
+        <!-- Recursos Recomendados -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/boton_fondo"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_recursos"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/diario_anim" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="RECURSOS"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Calendario de Notas -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/boton_fondo"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_calendario"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/calendario_anim" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CALENDARIO"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Áreas de mejora -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/boton_fondo"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_mejora"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/mejora_anim" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MEJORA"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Diario Personal -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/boton_fondo"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_diario"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/apuntes_anim" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DIARIO"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
     </GridLayout>
+
 
     <LinearLayout
         android:id="@+id/bottom_bar"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_width="411dp"
+        android:layout_height="65dp"
         android:background="#FFFFFF"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <!-- Agrega botones/iconos aquí -->
         <ImageView
@@ -201,19 +273,68 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_margin="8dp"
-            android:src="@drawable/ic_menu" />
-
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="8dp"
             android:src="@drawable/ic_profile" />
 
-        <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="8dp"
-            android:src="@drawable/ic_more" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Menú lateral derecho -->
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="PERFIL"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="AJUSTES"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="QUIÉNES SOMOS"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="NECESITO AYUDA"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="RECURSOS"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="TALLERES"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
