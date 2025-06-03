@@ -18,10 +18,5 @@ public class menu extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu);
 
-        ImageView imageView = findViewById(R.id.imageView2);
-        imageView.setOnClickListener(view -> {
-            Intent intent = new Intent(menu.this, MainActivity.class);
-            startActivity(intent);
-        });
     }
 }
