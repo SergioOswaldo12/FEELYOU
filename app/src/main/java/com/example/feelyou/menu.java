@@ -20,6 +20,10 @@ public class menu extends AppCompatActivity {
     private ImageView iconoMenu;
 
     private LinearLayout btnIrMusica;
+    private LinearLayout btnIrRecursos;
+
+    private LinearLayout btnIrCalendario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +32,7 @@ public class menu extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawer_layout);
         iconoMenu = findViewById(R.id.icono_menu);
+
 
         iconoMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +55,31 @@ public class menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnIrRecursos = findViewById(R.id.anim_recursos);
+        btnIrRecursos.setOnClickListener(view -> {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                String email = user.getEmail();
+                Intent intent = new Intent(menu.this, Activity_Recursos.class);
+                intent.putExtra("userEmail", email);
+                startActivity(intent);
+            }
+        });
+
+        btnIrCalendario = findViewById(R.id.anim_calendario);
+        btnIrCalendario.setOnClickListener(view -> {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                String email = user.getEmail();
+                Intent intent = new Intent(menu.this, Activity_calendario.class);
+                intent.putExtra("userEmail", email);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }
 

@@ -15,6 +15,15 @@
         android:theme="@style/Theme.FEELYOU"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_calendario"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_videos"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_libros"
+            android:exported="false" />
+        <activity
             android:name=".Activity_Recursos"
             android:exported="false" />
         <activity

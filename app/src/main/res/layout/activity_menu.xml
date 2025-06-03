@@ -142,6 +142,7 @@
 
             <!-- Recursos Recomendados -->
             <LinearLayout
+                android:id="@+id/anim_recursos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -152,7 +153,6 @@
                 android:padding="12dp">
 
                 <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/anim_recursos"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lottie_autoPlay="true"
@@ -170,6 +170,7 @@
 
             <!-- Calendario de Notas -->
             <LinearLayout
+                android:id="@+id/anim_calendario"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -180,7 +181,7 @@
                 android:padding="12dp">
 
                 <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/anim_calendario"
+
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lottie_autoPlay="true"
@@ -198,6 +199,7 @@
 
             <!-- Áreas de mejora -->
             <LinearLayout
+                android:id="@+id/anim_mejora"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -208,7 +210,6 @@
                 android:padding="12dp">
 
                 <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/anim_mejora"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lottie_autoPlay="true"
@@ -226,6 +227,7 @@
 
             <!-- Diario Personal -->
             <LinearLayout
+                android:id="@+id/anim_diario"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -236,7 +238,7 @@
                 android:padding="12dp">
 
                 <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/anim_diario"
+
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lottie_autoPlay="true"
