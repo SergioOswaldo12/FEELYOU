@@ -10,6 +10,7 @@ constraintlayout = "2.2.1"
 lottieVersion = "6.0.0"
 googleServiceVersion="4.4.2"
 firebase-bomV = "33.13.0"
+gson_g = "2.10.1"
 
 
 [libraries]
@@ -25,7 +26,8 @@ firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.r
 firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
 firebase-auth = {group = "com.google.firebase" , name = "firebase-auth"}
 firebase-database ={group = "com.google.firebase" , name ="firebase-database"}
-
+firebase-storage ={group = "com.google.firebase", name = "firebase-storage"}
+gson ={group = "com.google.code.gson", name = "gson", version.ref ="gson_g"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
