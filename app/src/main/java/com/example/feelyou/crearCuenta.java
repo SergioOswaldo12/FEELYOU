@@ -48,9 +48,6 @@ public class crearCuenta extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_crear_cuenta);
 
-        TextView miTexto = findViewById(R.id.textView8);
-        miTexto.setPaintFlags(miTexto.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-
         obtnAtrasC = findViewById(R.id.btnAtrasC);
 
         obtnAtrasC.setOnClickListener(new View.OnClickListener() {
