@@ -60,11 +60,41 @@
             android:name=".recuperarContrasena"
             android:exported="false" />
         <activity
-            android:name=".activity_editar_perfil"
-            android:exported="false"/>
+            android:name=".ejercicios"
+            android:exported="false" />
         <activity
-            android:name=".ActivityPerfil"
-            android:exported="false"/>
+            android:name=".ActivityDiario"
+            android:exported="false" />
+        <activity
+            android:name=".VideoEjercicio1"
+            android:exported="false" />
+        <activity
+            android:name=".VideoEjercicio2"
+            android:exported="false" />
+        <activity
+            android:name=".VideoEjercicio3"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityFormulario"
+            android:exported="false" />
+        <activity
+            android:name=".activity_ejercicio_meditacion"
+            android:exported="false" />
+        <activity
+            android:name=".activity_ejercicio_meditacionsegunda"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityFormularioMeditacion"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityEjercicioGuiado"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityGuiaDos"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityFormularioGuia"
+            android:exported="false" />
 
         <activity
             android:name=".principal"

@@ -27,6 +27,8 @@ public class menu extends AppCompatActivity {
     private LinearLayout btnIrRecursos;
 
     private LinearLayout btnIrCalendario;
+    private LinearLayout btnIrEjercicio;
+    private LinearLayout btnIrDiario;
 
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -110,6 +112,30 @@ public class menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnIrEjercicio = findViewById(R.id.anim_ejercicios);
+        btnIrEjercicio.setOnClickListener(view -> {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                String email = user.getEmail();
+                Intent intent = new Intent(menu.this, ejercicios.class);
+                intent.putExtra("userEmail", email);
+                startActivity(intent);
+            }
+
+        });
+
+        btnIrDiario = findViewById(R.id.anim_diario);
+        btnIrDiario.setOnClickListener(view -> {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                String email = user.getEmail();
+                Intent intent = new Intent(menu.this, ActivityDiario.class);
+                intent.putExtra("userEmail", email);
+                startActivity(intent);
+            }
+        });
+
 
         imgUser.setOnClickListener(v -> {
             Intent intent = new Intent(this, ActivityPerfil.class);

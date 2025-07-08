@@ -9,16 +9,17 @@
     android:padding="16dp"
     tools:context=".ActivityPerfil">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:id="@+id/image_perfil"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="24dp"
-        android:src="@drawable/ic_person"
-        app:civ_border_color="@android:color/darker_gray"
-        app:civ_border_width="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil"
+        android:background="@drawable/circle_mask"
+        android:clipToOutline="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +28,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Nombre: Juan"
+        android:text="Nombre: Sergio Oswaldo"
         android:textColor="#0F0F0F"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Fecha de nacimiento: 12/04/2000"
+        android:text="Fecha de nacimiento: 12/10/2003"
         android:textColor="#0F0F0F"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Vive en: Piura, Perú"
+        android:text="Vive en: Monterón-Piura-Perú"
         android:textColor="#0F0F0F"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +80,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Apellido: Pérez"
+        android:text="Apellido: Riofrio Castillo"
         android:textColor="#0F0F0F"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,18 +88,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_nombre" />
 
-    <Button
-        android:id="@+id/btn_editar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="252dp"
-        android:backgroundTint="@color/black"
-        android:text="Editar perfil"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_lugar"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
