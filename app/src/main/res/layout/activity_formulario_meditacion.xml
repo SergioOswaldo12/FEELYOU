@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5888A6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tituloFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Responde a las siguientes preguntas"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. ¿Cómo te sentiste al iniciar ambas sesiones de meditación?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. ¿Cuál de las dos meditaciones te ayudó más a relajarte?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. ¿Te fue cómodo mantener la postura en cuclillas durante el tiempo indicado?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. ¿Qué pensamientos vinieron a tu mente durante la respiración consciente?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. ¿Notaste alguna diferencia en tu estado físico antes y después de las meditaciones?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 6 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. ¿Te costó concentrarte durante alguno de los dos ejercicios?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 7 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. ¿Cuál fue tu parte favorita de todo el proceso de meditación?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 8 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. ¿Recomendarías estas prácticas a otra persona? ¿Por qué?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 9 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. ¿Crees que la meditación puede ayudarte en tu día a día? ¿Cómo?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Pregunta 10 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. ¿Deseas dejar algún comentario adicional sobre tu experiencia con estas meditaciones?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/pregunta10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <!-- Botón Enviar -->
+        <Button
+            android:id="@+id/btnEnviarRespuestas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar respuestas"
+            android:layout_marginTop="24dp"
+            android:textColor="#FFFFFF"
+            android:background="#2E7D32" />
+    </LinearLayout>
+</ScrollView>

@@ -11,6 +11,10 @@ lottieVersion = "6.0.0"
 googleServiceVersion="4.4.2"
 firebase-bomV = "33.13.0"
 gson_g = "2.10.1"
+navigationFragment = "2.6.0"
+navigationUi = "2.6.0"
+
+
 
 
 [libraries]
@@ -27,7 +31,12 @@ firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics
 firebase-auth = {group = "com.google.firebase" , name = "firebase-auth"}
 firebase-database ={group = "com.google.firebase" , name ="firebase-database"}
 firebase-storage ={group = "com.google.firebase", name = "firebase-storage"}
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
 gson ={group = "com.google.code.gson", name = "gson", version.ref ="gson_g"}
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

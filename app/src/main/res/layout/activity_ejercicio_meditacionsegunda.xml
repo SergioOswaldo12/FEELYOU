@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5888A6"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Ejercicio 2: Medita con paz interior en cuclillas para poder conectar con tu cuerpo."
+        android:textColor="#FBFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Contador -->
+    <TextView
+        android:id="@+id/txtContador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10:00"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Animación diferente -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animacionLottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/medit2" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/descripcionEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Este segundo ejercicio continúa ayudando a profundizar tu estado de relajación, sobre todo conectar con tu cuerpo y sentir una buena relajación"
+        android:textColor="#FFFDFD"
+        android:textSize="16sp" />
+
+    <!-- Botón: Ir a autoevaluación -->
+    <Button
+        android:id="@+id/btnAutoevaluacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Ir a mi autoevaluación"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>
