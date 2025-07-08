@@ -4,7 +4,7 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5888A6">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/titulo"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="Recursos Recomendados"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,6 +66,7 @@
                     android:id="@+id/btnLibros"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
                     android:text="Ir" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -102,6 +103,7 @@
                     android:id="@+id/btnVideos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
                     android:text="Ir" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>

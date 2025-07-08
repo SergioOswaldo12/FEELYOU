@@ -50,7 +50,7 @@ dependencies {
     implementation(libs.lottie)
     implementation ("com.airbnb.android:lottie:6.1.0")
     implementation ("androidx.core:core:1.12.0")
-// Calendario
+    implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.prolificinteractive:material-calendarview:1.4.3")
 
 }
