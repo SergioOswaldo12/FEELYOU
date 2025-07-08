@@ -24,6 +24,9 @@ public class menu extends AppCompatActivity {
 
     private LinearLayout btnIrCalendario;
 
+    private LinearLayout btnIrEjercicios;
+
+    private LinearLayout btnIrDiario;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,7 +81,27 @@ public class menu extends AppCompatActivity {
             }
         });
 
+        btnIrEjercicios = findViewById(R.id.anim_ejercicios);
+        btnIrEjercicios.setOnClickListener(view -> {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                String email = user.getEmail();
+                Intent intent = new Intent(menu.this, ejercicios.class);
+                intent.putExtra("userEmail", email);
+                startActivity(intent);
+            }
+        });
 
+        btnIrDiario = findViewById(R.id.anim_diario);
+        btnIrDiario.setOnClickListener(view -> {
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                String email = user.getEmail();
+                Intent intent = new Intent(menu.this, ActivityDiario.class);
+                intent.putExtra("userEmail", email);
+                startActivity(intent);
+            }
+        });
 
     }
 }

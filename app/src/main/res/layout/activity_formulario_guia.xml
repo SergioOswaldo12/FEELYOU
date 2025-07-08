@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5888A6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tituloFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Responde a las siguientes preguntas sobre la meditación guiada"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Preguntas -->
+        <!-- Puedes copiar/pegar este bloque y cambiar el texto para cada pregunta -->
+
+        <!-- Pregunta 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. ¿Cómo te sentiste al comenzar la meditación guiada?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+        <EditText
+            android:id="@+id/pregunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta"
+            android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="2. ¿Qué sensaciones físicas notaste durante el primer ejercicio?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta2" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="3. ¿Qué parte del audio te ayudó más a concentrarte?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta3" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="4. ¿Te resultó sencillo seguir la guía de voz?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta4" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="5. ¿Qué pensamientos surgieron mientras realizabas la meditación?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta5" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="6. ¿En qué momento sentiste mayor tranquilidad?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta6" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="7. ¿Qué diferencias notaste entre los dos ejercicios guiados?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta7" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="8. ¿Cuál de los dos ejercicios fue más efectivo para ti? ¿Por qué?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta8" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="9. ¿Recomendarías este tipo de ejercicio a otros? ¿Por qué?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta9" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="10. ¿Deseas compartir alguna experiencia o reflexión final?"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:layout_marginTop="8dp" />
+        <EditText android:id="@+id/pregunta10" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#FFFFFF"
+            android:hint="Escribe tu respuesta" android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnEnviarRespuestas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar respuestas"
+            android:layout_marginTop="24dp"
+            android:textColor="#FFFFFF"
+            android:background="#2E7D32" />
+    </LinearLayout>
+</ScrollView>

@@ -19,7 +19,7 @@ import java.util.List;
 public class canciones extends AppCompatActivity {
 
     private Button btnAdminMusic;
-    private final String ADMIN_EMAIL = "jjuarezsa01@ucvvirtual.edu.pe"; // CAMBIA esto por el correo del administrador
+    private final String ADMIN_EMAIL = "sriofrioca@ucvvirtual.edu.pe"; // CAMBIA esto por el correo del administrador
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

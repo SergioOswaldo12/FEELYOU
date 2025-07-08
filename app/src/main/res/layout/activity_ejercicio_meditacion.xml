@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5888A6"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título del ejercicio -->
+    <TextView
+        android:id="@+id/tituloEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Ejercicio 1: Medita con paz interior y mente abierta"
+        android:textColor="#FBFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Contador -->
+    <TextView
+        android:id="@+id/txtContador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10:00"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Animación Lottie -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animacionLottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/moduloejer1" />
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/descripcionEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Este ejercicio de meditación ayuda a concentrar tu paz interior y relajarte de una manera profunda, lo cual combate la ansiedad."
+        android:textColor="#FFFDFD"
+        android:textSize="16sp" />
+
+    <!-- Botón siguiente -->
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Siguiente"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>

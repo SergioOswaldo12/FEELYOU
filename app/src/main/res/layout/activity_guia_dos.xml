@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5888A6"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a Ejercicio Guiado"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segundo ejercicio"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Animación -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animacionLottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/meditani"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <!-- Contador -->
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Descripción -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Este ejercicio guiado busca relajar tu mente, conectar contigo mismo y ayudarte a meditar con mayor enfoque y conciencia."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón -->
+    <Button
+        android:id="@+id/btnIrForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a mi autoevaluación"
+        android:textColor="#000000"
+        android:backgroundTint="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
