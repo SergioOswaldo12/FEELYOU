@@ -59,8 +59,6 @@ public class menu extends AppCompatActivity {
                 startActivity(new Intent(this, ActivityPerfil.class));
             } else if (id == R.id.nav_quienes_somos) {
                 startActivity(new Intent(this, ActivityQuienesSomos.class));
-            } else if (id == R.id.nav_ayuda) {
-                startActivity(new Intent(this, ActivityNecesitoAyuda.class));
             } else if (id == R.id.nav_recursos) {
                 startActivity(new Intent(this, ActivityRecursosAtencion.class));
             }
